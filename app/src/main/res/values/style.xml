@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+        <color name="selected_tab_color">#FFC107</color>
+        <color name="unselected_tab_color">#15150B</color>
+
+
+
+    <style name="CustomTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <!-- Set the text color for the selected tab -->
+        <item name="tabTextColor">@color/selected_tab_color</item>
+    </style>
+
+    <style name="UnselectedTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/unselected_tab_color</item>
+    </style>
+
+</resources>
+

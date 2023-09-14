@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24sp"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    tools:context=".Refine">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Select Your Availaibilty"
+                android:textColor="@color/text_all"
+                android:textStyle="bold"
+                android:textSize="21dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/text_box_border"
+                android:hint="Select Your Availaibilty"
+                android:inputType="text"
+                android:textColorHint="#333333"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Your Status"
+                android:textStyle="bold"
+                android:textColor="@color/text_all"
+                android:textSize="21dp" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/text_box_border"
+                android:hint="Hii Community ..."
+                android:textColorHint="#333333"
+                android:inputType="text"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_all"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:text="Select Hyper Local Distance" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_all"
+        android:textSize="21dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:text="Select Purpose" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/holo_red_dark"
+            android:elevation="4dp"
+
+            android:padding="10dp"
+            android:text="movies"
+            android:textColor="@drawable/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/holo_red_dark"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="dating"
+
+            android:textColor="@drawable/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/holo_red_dark"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:text="Freindship"
+
+            android:textColor="@drawable/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:padding="6dp"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buiness"
+        android:layout_margin="4dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/radio_selector"
+        android:elevation="4dp"
+        android:textColor="@drawable/text_color"/>
+
+    <RadioButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/radio_selector"
+        android:button="@android:color/holo_red_dark"
+        android:elevation="4dp"
+        android:text="Coffee"
+        android:padding="10dp"
+
+        android:textColor="@drawable/text_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:padding="10dp"
+
+        android:textSize="18dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/radio_selector"
+        android:elevation="4dp"
+        android:textColor="@drawable/text_color" />
+
+    </RadioGroup>
+
+
+
+
+
+</LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
